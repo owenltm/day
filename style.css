@@ -1,6 +1,7 @@
 body {
     margin: 0;
     overflow: hidden;
+    /* background-color: #1a237e; */
 
     font-family: 'Montserrat';
 }
@@ -13,16 +14,30 @@ body {
 }
 
 .text {
-    color: white;
+    /* color: white; */
     
 }
 
 #timetxt {
-    font-size: 72px;
+    font-size: 100px;
     text-align: center;
 }
 
 #greettxt {
-    font-size: 24px;
+    font-size: 36px;
     text-align: center;
 }
+
+@media only screen and (max-width: 600px) {
+
+    #timetxt {
+        font-size: 54px;
+        text-align: center;
+    }
+    
+    #greettxt {
+        font-size: 18px;
+        text-align: center;
+    }
+
+} 
