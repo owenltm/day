@@ -15,11 +15,16 @@ function startTime() {
     s = checkTime(s);
 
     document.getElementById('timetxt').innerHTML = h + ":" + m + ":" + s;
-    if(h < 11){
-        document.getElementById("greettxt").innerHTML = "Good Morning dayy :) <br> Have a good day";
-    }
-    if(h > 18 || h < 5){
-        document.getElementById("greettxt").innerHTML = "Goodnight dayy :) Have a nice sleep";
+    if(h >= 5 && h < 12){
+        document.getElementById("greettxt").innerHTML = "Pagiii, semoga harimu menyenangkan :)";
+    } else if (h)
+    if(h >= 12 && h < 17){
+        document.getElementById("greettxt").innerHTML = "Siangg, sudah makan belomm ??";
+    } else if (h >=17 && h < 19){
+        document.getElementById("greettxt").innerHTML = "Soreee, inget mandi yaaaa wkwkwk";
+    } else {
+        document.body.style.backgroundColor = "#1a237e";
+        document.getElementById("greettxt").innerHTML = "Selamat malam, tidur yang nyenyakk ❤️";
     }
 
     t = setTimeout(function () {

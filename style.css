@@ -1,16 +1,28 @@
 body {
     margin: 0;
     overflow: hidden;
-    background: #1a237e;
 
     font-family: 'Montserrat';
 }
 
-#timetxt {
-    color:white;
-    font-size: 72px;
+.main {
     position: fixed;
-    top:45%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.text {
+    color: white;
+    
+}
+
+#timetxt {
+    font-size: 108px;
+    text-align: center;
+}
+
+#greettxt {
+    font-size: 36px;
+    text-align: center;
 }
